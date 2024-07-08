@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UE Queueing system</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <img
+        src="UNIVERSITY OF THE EAST (3).png"
+        alt=""
+        height="145px"
+        class="ueBanner"
+      />
+      <img src="uelogo.png" alt="" class="logo" />
+      <img src="uelogo2.png" alt="" class="logo2" />
+      <div class="queueContainer">
+        <div class="upperPart">
+          <div class="leftSideWrapper">
+            <h1>Regular Customers</h1>
+            <div class="queueCounter">
+              <h2>Customers in Queue:</h2>
+              <h2 id="regularQueueCount">0</h2>
+            </div>
+
+            <div class="customers">
+              <div class="customerSides">
+                <div class="nextInQueue">
+                  <h3>Next in line</h3>
+                </div>
+                <ul id="regularList" class="firstInLine"></ul>
+              </div>
+              <div class="customerSides">
+                <ul id="regularList2"></ul>
+              </div>
+            </div>
+            <div class="customerButtons">
+              <button id="resetRegularQueue" class="reset">Reset queue</button>
+              <button id="nextRegular" class="next">Next Customer</button>
+              <button id="addRegular" class="addBtn">Add Customer</button>
+            </div>
+          </div>
+          <div class="centerField">
+            <div class="centerLine"></div>
+          </div>
+
+          <div class="rightSideWrapper">
+            <h1>Priority Customers</h1>
+            <div class="queueCounter">
+              <h2>Customers in Queue:</h2>
+              <h2 id="priorityCount">0</h2>
+            </div>
+
+            <div class="customers">
+              <div class="customerSides">
+                <div class="nextInQueue">
+                  <h3>Next in line</h3>
+                </div>
+                <ul id="priorityList" class="firstInLine"></ul>
+              </div>
+
+              <div class="customerSides">
+                <ul id="priorityList2"></ul>
+              </div>
+            </div>
+            <div class="customerButtons">
+              <button id="addPriority" class="addBtn">Add Customer</button>
+              <button id="nextPriority" class="next">Next Customer</button>
+              <button id="resetPriorityQueue" class="reset">Reset queue</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="nowServing">
+          <div class="nowServingTopPart">
+            <div class="leftServingWindows windows">
+              <button class="leftWinBtn win1 winBtns">Window 1</button>
+              <button class="leftWinBtn win2 winBtns">Window 2</button>
+              <button class="leftWinBtn win3 winBtns">Window 3</button>
+            </div>
+
+            <h1>Now Serving</h1>
+            <div class="rightServingWindows windows">
+              <button class="rightWinBtn win1 winBtns">Window 1</button>
+              <button class="rightWinBtn win2 winBtns">Window 2</button>
+              <button class="rightWinBtn win3 winBtns">Window 3</button>
+            </div>
+          </div>
+
+          <div class="servingCustomers">
+            <div class="displayLeft display">
+              <button class="displayBtn" onclick="displayNowServing()">
+                Display now
+              </button>
+              <h3 id="serving1">-</h3>
+            </div>
+
+            <div class="displayRight display">
+              <h3 id="serving2">-</h3>
+              <button class="displayBtn" onclick="displayNowServing()">
+                Display now
+              </button>
+            </div>
+          </div>
+          <audio id="sound" src="notif2.ogg"></audio>
+        </div>
+      </div>
+      <footer>
+        <center>
+          &copy; Cedrick John B. Leocadio | University of the East | 2023
+        </center>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

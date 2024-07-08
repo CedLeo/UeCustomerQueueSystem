@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "sans-serif";
+}
+
+h1{
+    font-size: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif    ;
+}
+
+h2{
+    margin-right: 10px;
+}
+
+img{
+    z-index: 3;
+
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    height: 120px;
+    z-index: 3;
+}
+
+.logo2{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    height: 120px;
+    z-index: 3;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(uebgmain.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+
+
+.upperPart{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+}
+
+.leftSideWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+}
+
+.queueCounter{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.rightSideWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+ h1{
+    background-color: #d4d4d4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 14px 12px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 14px 12px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 14px 12px -6px rgba(0,0,0,0.75);
+}
+
+.centerLine{
+    align-self: center;
+    height: 90%;
+    border-left: 1px solid rgb(44, 44, 44);
+    display: flex;
+}
+.centerField{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+hr{
+    width: 100%;
+    align-self: center;
+}
+
+.nowServing{
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    align-self: center;
+    height: 50%;
+}
+
+.nowServing h1{
+    align-self: center;
+}
+
+.nextInQueue{
+    width: 40%;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.customers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+}
+
+.customerSides{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.servingCustomers{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 32px;
+    align-items: center;
+}
+
+.servingCustomers h3{
+    font-size: 64px;
+}
+
+.customerButtons{
+    margin: 10px;
+    height: 18%;
+    display: flex;
+    width: 90%;
+    gap: 5px;
+    align-items: end;
+}
+
+input{
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    padding-left: 5px;
+}
+
+input:focus{
+    border: none;
+    outline:none
+}
+
+input::placeholder{
+    padding-left: 5px;
+}
+
+.inputField{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.customerButtons button{
+    height: 70%;
+    width: 50%;
+
+}
+
+.addBtn{
+    height: 60px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(103, 185, 103);
+    font-weight: 600;
+}
+
+.addBtn:active{
+    background-color: rgb(64, 116, 64);
+    color: whitesmoke;
+}
+
+.next{
+    background-color: rgb(123, 123, 219) ;
+    border-radius: 5px;
+    border: none;
+}
+
+.next:active{
+    background-color: rgb(78, 78, 139) ;
+    color: whitesmoke;
+}
+
+
+.reset:active{
+    background-color: rgb(94, 27, 27) ;
+    color: whitesmoke;
+}
+
+.reset{
+    background-color: rgb(218, 64, 64) ;
+    border-radius: 5px;
+    border: none;
+}
+
+.queueContainer{
+    align-self: center;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(249,241,241, 0.9);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.firstInLine li:first-child{
+    background-color: rgb(110, 196, 110);;
+}
+
+li{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    background-color: rgb(145, 145, 145);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.nowServingTopPart{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+}
+
+.winBtns{
+    height: 50%;
+    width: 30%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Styles for the selected left button */
+.leftWinBtn.selected {
+    background-color: #333; /* Change this to your desired darker color */
+    color: #fff; /* Change this to your desired text color */
+  }
+  
+  /* Styles for the selected right button */
+  .rightWinBtn.selected {
+    background-color: #333; /* Change this to your desired darker color */
+    color: #fff; /* Change this to your desired text color */
+  }
+
+.windows{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.display{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    height: 50%;
+}
+
+.displayLeft{
+    margin-left: -200px;
+}
+
+.displayRight{
+    margin-right: -200px;
+}
+
+.displayBtn{
+    height: 50%;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 18px;
+}
+
+.displayBtn:active{
+    background-color: white;
+    color: #333;
+}
+
+.windowTitle{
+    position: absolute;
+}
+
+.windowchoose{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ueBanner{
+    background-color: rgba(211, 21, 21, 0.363);
+    margin: 10px 10px 20px 10px;
+    border-radius: 100px
+}
+
+footer{
+    color: white;
+}
